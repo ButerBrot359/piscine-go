@@ -1,1 +1,1 @@
-find -name "*.sh" -print | cut -d "." -f2
+find -name "*.sh" -print | cut -d "." -f2 | tr / ' '
