@@ -10,5 +10,5 @@ func main() {
   fmt.Print(string(start))
  }
 
- fmt.Println()
+ fmt.Print("\n")
 }
