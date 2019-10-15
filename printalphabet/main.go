@@ -1,8 +1,6 @@
 package main
 
-import (
- "fmt"
-)
+import "fmt"
 
 func main() {
 
@@ -10,5 +8,6 @@ func main() {
   fmt.Print(string(start))
  }
 
- fmt.Print("\n")
+ fmt.Println()
+ fmt.Println()
 }
