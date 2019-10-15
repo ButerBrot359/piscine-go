@@ -1,1 +1,1 @@
-find -name "*.sh" -print | cut -d "." -f2 | tr -d '/' 
+find -name "*.sh" -printf "%f\n" | cut -d "." -f1
