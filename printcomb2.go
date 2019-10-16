@@ -13,21 +13,21 @@ func PrintComb2() {
 						PrintNumbers(i, j, k, b)
 					}
 				}
-				
-			}	
-		}		
-	
+
+			}
+		}
+
 	}
-	
+
 }
-func PrintNumbers(i, j, k, b rune){
+func PrintNumbers(i, j, k, b rune) {
 	z01.PrintRune(i)
 	z01.PrintRune(j)
 	z01.PrintRune(' ')
 	z01.PrintRune(k)
 	z01.PrintRune(b)
-	if i == '9' && j == '8' && k == '9' && b == '9'{
-		z01.PrintRune('\n')	
+	if i == '9' && j == '8' && k == '9' && b == '9' {
+		z01.PrintRune('\n')
 	} else {
 		z01.PrintRune(',')
 		z01.PrintRune(' ')
