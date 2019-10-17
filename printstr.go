@@ -1,14 +1,14 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintStr(str string) {
 
-	stringi := []rune(str)
+	stringi := []byte(str)
 
 	for _, letter := range stringi {
 
-		z01.PrintRune(letter)
+		fmt.Printf("%c", letter)
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }
