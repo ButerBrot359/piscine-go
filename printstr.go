@@ -10,5 +10,5 @@ func PrintStr(str string) {
 
 		z01.PrintRune(letter)
 	}
-	z01.PrintRune('\n')
+
 }
