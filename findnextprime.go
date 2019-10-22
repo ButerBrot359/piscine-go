@@ -8,12 +8,12 @@ func FindNextPrime(nb int) int {
 		for i := 1; i <= nb; i++ {
 			if KB(nb) == false {
 				nb++
-			} else if KB(nb) == true {
-				return nb
+			} else {
+				break
 			}
 		}
+		return nb
 	}
-	return nb
 }
 func KB(nb int) bool {
 
