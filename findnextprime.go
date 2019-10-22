@@ -6,16 +6,16 @@ func FindNextPrime(nb int) int {
 		return 2
 	} else {
 		for i := 1; i <= nb; i++ {
-			if IsPrime(nb) == false {
+			if KB(nb) == false {
 				nb++
-			} else if IsPrime(nb) == true {
+			} else if KB(nb) == true {
 				return nb
 			}
 		}
 	}
 	return nb
 }
-func IsPrime(nb int) bool {
+func KB(nb int) bool {
 
 	if nb <= 1 {
 		return false
