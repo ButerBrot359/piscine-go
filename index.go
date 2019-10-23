@@ -1,4 +1,4 @@
-package quest5
+package piscine
 
 func Index(s, t string) int {
 	ln := 0
