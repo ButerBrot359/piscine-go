@@ -1,7 +1,7 @@
 package piscine
 
 func Atoi(s string) int {
-	nb := StrLen(s)
+	nb := H(s)
 	massiv := []rune(s)
 	num := 0
 	s = ""
@@ -9,8 +9,8 @@ func Atoi(s string) int {
 	plus := 0
 	summa := 0
 	for i := 0; i < nb; i++ {
-		num = 0
 		if massiv[i] >= '0' && massiv[i] <= '9' {
+			num = 0
 			for j := '0'; j < massiv[i]; j++ {
 				num++
 			}
@@ -27,4 +27,13 @@ func Atoi(s string) int {
 		summa = -summa
 	}
 	return summa
+}
+func H(s string) int {
+	m := 0
+	for _, n := range s {
+		if n == n {
+			m++
+		}
+	}
+	return m
 }
