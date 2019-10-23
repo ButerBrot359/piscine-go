@@ -1,7 +1,7 @@
 package piscine
 
 func TrimAtoi(s string) int {
-	nb := StrLen(s)
+	nb := StrLe(s)
 	massiv := []rune(s)
 	plus := 0
 	minus := 0
@@ -27,7 +27,7 @@ func TrimAtoi(s string) int {
 	return summa
 
 }
-func StrLen(s string) int {
+func StrLe(s string) int {
 
 	m := 0
 	for range s {
