@@ -2,9 +2,9 @@ package piscine
 
 func Index(s string, toFind string) int {
 	newstr := []rune(s)
-	nb := StrLe(s)
+	nb := StrLox(s)
 	strFind := []rune(toFind)
-	nbFind := StrLe(toFind)
+	nbFind := StrLox(toFind)
 	match := 0
 	index := 0
 	if nbFind == 0 {
@@ -26,7 +26,7 @@ func Index(s string, toFind string) int {
 	}
 	return index - nbFind + 1
 }
-func StrLe(s string) int {
+func StrLox(s string) int {
 	m := 0
 	for range s {
 		m++
