@@ -1,6 +1,6 @@
 package piscine
 
-func IsLower(str string) bool {
+func IsUpper(str string) bool {
 	m := 0
 	for range str {
 		m++
