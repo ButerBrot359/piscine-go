@@ -7,7 +7,7 @@ func IsLower(str string) bool {
 	}
 	nbr := []rune(str)
 	for i := 0; i < m; i++ {
-		if (nbr[i] >= 'a' && nbr[i] <= 'z') {
+		if nbr[i] >= 'a' && nbr[i] <= 'z' {
 			continue
 		} else {
 			return false
