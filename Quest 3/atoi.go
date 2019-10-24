@@ -30,10 +30,8 @@ func Atoi(s string) int {
 }
 func H(s string) int {
 	m := 0
-	for _, n := range s {
-		if n == n {
+	for range s {
 			m++
-		}
 	}
 	return m
 }
