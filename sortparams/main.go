@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	arg := os.Args
+	arg := os.Args[1:]
 	lol := []string(arg)
 	nb := Batyr(arg)
 	for i := 0; i < nb; i++ {
@@ -17,12 +17,11 @@ func main() {
 		}
 	}
 	for i := range arg {
-		if i != 0 {
-			for _, c := range lol[i] {
-				z01.PrintRune(c)
-			}
-			z01.PrintRune('\n')
+		for _, c := range lol[i] {
+			z01.PrintRune(c)
 		}
+		z01.PrintRune('\n')
+	
 	}
 }
 func Batyr(s []string) int {
@@ -32,6 +31,7 @@ func Batyr(s []string) int {
 	}
 	return m
 }
+// Sort by bubble
 func SwapBabe(b []string, i, j int) {
 	temp := b[i]
 	b[i] = b[j]
