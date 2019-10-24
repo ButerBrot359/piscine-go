@@ -15,7 +15,7 @@ func main() {
 		}
 		z01.PrintRune('\n')
 	}
-	
+
 }
 func NB(s []string) int {
 	m := 0
